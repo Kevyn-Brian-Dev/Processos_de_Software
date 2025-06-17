@@ -1,0 +1,97 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+}
+
+html {
+  background: linear-gradient(180deg, #0325ff 0%, #000000 100%);
+}
+
+input:focus {
+  outline: none;
+}
+
+#register-container {
+  max-width: 900px;
+  min-height: 80vh;
+  margin: 2rem auto;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+  background: url("../img/segurança.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#banner-layer {
+  background-color: rgba(25, 11, 122, 0.7);
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#register-banner h1 {
+  font-size: 5rex;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#register-form {
+  background-color: #000000;
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#register-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+#register-form p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+
+.form-control input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 0.6rem 0;
+  border-radius: 5px;
+}
