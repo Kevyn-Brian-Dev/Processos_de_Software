@@ -17,7 +17,7 @@
         </div>
       </div>
       <div id="register-form">
-        <h2>Crie sua conta:</h2>
+        <h2>Crie sua conta</h2>
         <p>Registre-se para utilizar o sistema</p>
         <div class="form-control">
           <label for="name">Nome</label>
@@ -26,29 +26,59 @@
             name="name"
             id="name"
             placeholder="Digite o seu nome"
+            autocomplete="name"
           />
         </div>
         <div class="form-control">
           <label for="email">E-mail</label>
           <input
             type="text"
-            type="email"
+            name="email"
             id="email"
             placeholder="Digite o seu e-mail"
+            autocomplete="email"
           />
         </div>
         <div class="form-control">
           <label for="password">Senha</label>
           <input
             type="text"
-            type="password"
+            name="password"
             id="password"
             placeholder="Digite a sua senha"
+            autocomplete="new-password"
           />
         </div>
         <p>
-          Deseja Gerar Senha Segura Automaticamente?
-          <span id="generate-password">Clique Aqui</span>
+          Deseja gerar senha segura automaticamente?
+          <span id="generate-password">Clique aqui.</span>
+        </p>
+        <div id="options" class="form-control">
+          <label>
+            <input
+              type="checkbox"
+              id="include-lowercase"
+              checked> Letras minúsculas
+          </label>
+          <label>
+            <input 
+              type="checkbox"
+              id="include-uppercase"
+              checked> Letras maiúsculas
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="include-numbers"
+              checked> Números
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="include-symbols"
+              checked> Símbolos
+          </label>
+        </div>
         <div id="generated-password">
           <p>Aqui está a sua senha:</p>
           <h4></h4>
@@ -56,10 +86,11 @@
         <div class="form-control">
           <label for="confirmepassword"> Confimação de Senha</label>
           <input 
-            type="text"
-            type="confirmepassword"
+            type="password"
+            name="confirmepassword"
             id="confirmepassword"
             placeholder="Confirme sua Senha"
+            autocomplete="new-password"
             >
         </div>
         <input type="submit" value="Cadastrar">
