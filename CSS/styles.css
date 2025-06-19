@@ -47,7 +47,7 @@ input:focus {
 }
 
 #register-banner h1 {
-  font-size: 5rex;
+  font-size: 4rem;
   margin-bottom: 1rem;
   color: #fff;
   word-spacing: 50rem;
@@ -100,6 +100,7 @@ input:focus {
 #generate-password{
 
   font-weight: bold;
+  color: #78bcfc;
   cursor: pointer;
   transition: .5s;
 
@@ -107,7 +108,7 @@ input:focus {
 
 #generate-password:hover{
 
-  color: #0099ff;
+  color: #007BFF;
 }
 
 #register-form #generated-password{
@@ -117,17 +118,24 @@ input:focus {
   font-weight: bold;
   font-size: 1.2rem;
   padding: .4rem;
-  color:#333;
+  color:#333333;
   text-align: center;
   margin-bottom: 1rem;
   display: none;
 }
 
-#register-form #generated-password{
+#register-form #generated-password p{
 
-  color: #3f3d3d;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
+
+#register-form #generated-password h4{
+
+  color: #cffff1;
+  
+}
+
 #register-form input[type = "submit"]{
 
     background-color: #09e526;
