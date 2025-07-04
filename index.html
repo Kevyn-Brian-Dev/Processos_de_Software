@@ -41,14 +41,20 @@
         </div>
         <div class="form-control">
           <label for="password">Senha</label>
-          <input
-            type="text"
+          <div class="senha">
+            <input
+            type="password"
             name="password"
             id="password"
             placeholder="Digite a sua senha"
             autocomplete="new-password"
-          />
-        </div>
+            />
+            <div class="senhaBotoes">
+              <button type="button" onclick="mostrarOcultarSenha()" title="Mostrar/Ocultar"><img id="icone-olho" src="img/ocultar.png" alt="Mostrar/Ocultar"></button>
+              <button type="button" onclick="copiarSenha()" title="Copiar Senha"><img id="icone-copiar" src="img/copiar.png" alt="Copiar"></button>
+            </div>
+          </div>
+        </div>
         <p>
           Deseja gerar senha segura automaticamente?
           <span id="generate-password">Clique aqui.</span>
@@ -93,7 +99,7 @@
             autocomplete="new-password"
             >
         </div>
-        <input type="submit" value="Cadastrar">
+        <a href="pages/paginaPosCadastro.html"><input type="submit" value="Cadastrar"></a>
       </div>
     </div>
   </body>
