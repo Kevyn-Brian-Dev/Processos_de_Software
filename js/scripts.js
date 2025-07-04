@@ -67,3 +67,32 @@ const generatePassword = () => {
 generatePasswordButton.addEventListener("click", () => {
     generatePassword();
 });
+
+function mostrarOcultarSenha() {
+    const senhaInput = document.getElementById("password");
+    const icone = document.getElementById("icone-olho");
+
+    if(senhaInput.type === "text") {
+        senhaInput.type = "password";
+        icone.src = "img/ocultar.png";
+    } else {
+        senhaInput.type = "text";
+        icone.src = "img/visualizar.png";
+    }
+}
+
+function copiarSenha() {
+    const senhaInput = document.getElementById("password");
+    const iconeCopy = document.getElementById("icone-copiar");
+
+    senhaInput.select();
+    senhaInput.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+
+    iconeCopy.src = "img/copiado.png";
+
+    setTimeout(() => {
+      iconeCopy.src = "img/copiar.png";
+    }, 1000);
+}
+
