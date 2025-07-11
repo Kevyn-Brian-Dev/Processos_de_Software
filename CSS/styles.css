@@ -47,7 +47,7 @@ input:focus {
 }
 
 #register-banner h1 {
-  font-size: 5rex;
+  font-size: 4rem;
   margin-bottom: 1rem;
   color: #fff;
   word-spacing: 50rem;
@@ -100,6 +100,7 @@ input:focus {
 #generate-password{
 
   font-weight: bold;
+  color: #78bcfc;
   cursor: pointer;
   transition: .5s;
 
@@ -107,7 +108,7 @@ input:focus {
 
 #generate-password:hover{
 
-  color: #0099ff;
+  color: #007BFF;
 }
 
 #register-form #generated-password{
@@ -117,17 +118,24 @@ input:focus {
   font-weight: bold;
   font-size: 1.2rem;
   padding: .4rem;
-  color:#333;
+  color:#333333;
   text-align: center;
   margin-bottom: 1rem;
   display: none;
 }
 
-#register-form #generated-password{
+#register-form #generated-password p{
 
-  color: #3f3d3d;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
+
+#register-form #generated-password h4{
+
+  color: #cffff1;
+  
+}
+
 #register-form input[type = "submit"]{
 
     background-color: #09e526;
@@ -144,4 +152,62 @@ input:focus {
 #register-form input[type = "submit"]:hover{
 
   opacity: 1;
+}
+
+.senha {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.senha input {
+  padding-right: 40px;
+  flex: 1 1 200px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.senhaBotoes {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.senhaBotoes button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.senhaBotoes img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  #register-container {
+    flex-direction: column;
+  }
+
+  #register-banner,
+  #register-form {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #register-form {
+    border-radius: 0 0 20px 20px;
+  }
+
+  #register-banner {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+a {
+  margin-left: auto;
 }
